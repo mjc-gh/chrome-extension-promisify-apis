@@ -1,5 +1,6 @@
 First, we'll need a small function to wrap all the callback based API
-methods with:
+methods with. This function will return a promise and will check for
+Chrome runtime errors.
 
 ```javascript
 const asPromised = (block) => {
