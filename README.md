@@ -21,7 +21,7 @@ function!
 
 ```javascript
 const storage = {
-    set(items){
+    set(items) {
         return asPromised((callback) => {
             chrome.storage.local.set(items, callback);
         });
