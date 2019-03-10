@@ -48,4 +48,11 @@ such:
 // This will log:
 //   Object {key: "value"}
 storage.set({ key: 'value' }).then(() => storage.get('key')).then(console.log)
+
+
+// Or with await
+//   Object {key: "value"}
+await storage.set({ key: 'value' });
+
+console.log(await storage.get('key'));
 ```
